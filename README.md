@@ -1,6 +1,6 @@
 # Front-end-integration-test
 
-githug page
+github page
 https://fatih-esgi.github.io/Front-end-integration-test/
 
 Information sur le code.
