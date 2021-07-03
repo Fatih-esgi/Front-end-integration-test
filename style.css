@@ -1,0 +1,333 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+/*---------------------------------- remove padding and margin ul */
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: none;
+}
+
+/* -------------------------------------------------------content */
+html {
+    font-family: "DM Sans", sans-serif;
+}
+
+main {
+    background-image: none;
+    background-position: center top;
+    width: 850px;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+
+/* ---------------------------------------------category of page */
+h1.MainCat {
+    margin: 41px 8.9% 0 8.9%;
+    font-size: 0.73em;
+    text-transform: uppercase;
+    color: #3a414d;
+}
+h2.secondaryCat {
+    margin: 10px 7px 0px 8.9%;
+    color: #3a414d;
+    float: left;
+    letter-spacing: 0.8px;
+}
+
+svg.pawBlack {
+    margin-top: 16px;
+}
+
+/*---------------------------------------------------- main post */
+article.topPost {
+    margin: 27px 8.9%;
+    background-size: 102%;
+    opacity: 1;
+    height: 425px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 2px #0588a04a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #cecece;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease-in 0.2s;
+}
+
+article.topPost:hover {
+    background-size: 108%;
+    transition: all ease-in 0.2s;
+}
+
+article.topPost .gradientOverlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gradientOverlay {
+    padding: 20px 30px;
+    background: linear-gradient(
+        0deg,
+        rgba(54, 64, 70, 1) 0%,
+        rgba(54, 64, 70, 0.45655356869310226) 70%,
+        rgba(54, 64, 70, 0.04478886281074934) 100%
+    );
+}
+
+a.readMore {
+    background-color: #0588a0;
+    width: 120px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    height: 55px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #cecece;
+    letter-spacing: 0.9px;
+    transition: all ease-in 0.1s;
+}
+
+a.readMore:hover {
+    transform: scale(1.02);
+    transition: all ease-in 0.1s;
+}
+
+svg.pawWhite {
+    margin-left: 9px;
+}
+
+p.postContent {
+    margin-bottom: 21px;
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+}
+
+h1.postTitle {
+    margin-bottom: 0;
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+}
+
+p.postCat {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #0588a0;
+}
+
+/* --------------------------------------------carousel */
+
+.slider {
+    position: relative;
+    top: 0;
+    left: 9%;
+    width: 697px;
+    height: 300px;
+    margin-top: -10px;
+    opacity: 1;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 697px;
+    height: 300px;
+    z-index: 1;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -697px;
+    width: 10000px;
+}
+
+.slide li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.slides.shifting {
+    transition: left 0.4s ease-out;
+}
+
+.slide {
+    width: 697px;
+    height: 300px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s;
+    position: relative;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    top: 0;
+    justify-content: space-between;
+}
+
+.slide li {
+    list-style-type: none;
+    color: #cecece;
+}
+
+.slide li .gradientOverlay {
+    padding: 0px 30px;
+    background: linear-gradient(0deg, rgba(37, 48, 54, 1) 0%, rgb(37 48 54 / 35%) 70%, rgb(37 48 54 / 8%) 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transition: all ease-in 0.3s;
+}
+
+.slide li:hover .gradientOverlay {
+    background: linear-gradient(0deg, rgba(54, 64, 70, 1) 0%, rgb(54 64 70 / 25%) 70%, rgb(54 64 70 / 0%) 100%);
+    transition: all ease-in 0.3s;
+}
+
+.slide li h1.postTitle {
+    font-size: 1.2em;
+}
+
+.slide .leftCol li h1.postTitle {
+    margin-bottom: 15px;
+}
+
+li.carouselItem1 {
+    height: 300px;
+    width: 342px;
+    border-radius: 20px;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    transition: all ease-in 0.2s;
+}
+
+li.carouselItem1:hover {
+    background-size: cover;
+}
+
+li.carouselItem2 {
+    background-size: cover;
+    background-position: 0px -70px;
+}
+
+li.carouselItem3 {
+    background-size: cover;
+    background-position: 0px -70px;
+}
+
+#slide1 li.carouselItem3 {
+    background-size: cover;
+    background-position: 0px -89px;
+}
+
+#slide1 li.carouselItem2,
+#slide1 li.carouselItem2 .gradientOverlay {
+    transform: rotateY(180deg);
+}
+
+#slide2 .carouselItem1 h1.postTitle {
+    text-transform: capitalize;
+}
+
+.carouselItem2 h1.postTitle {
+    text-transform: capitalize;
+}
+
+.leftCol {
+    width: 346px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.leftCol li {
+    height: 145px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.slide .leftCol .gradientOverlay {
+    padding: 0 16px;
+    text-align: center;
+}
+
+.carouselItem1 h1.postTitle {
+    width: 150px;
+    margin-bottom: -4px;
+}
+
+.infoPost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 7px;
+}
+
+svg.readTimeIco {
+    margin-right: 4px;
+}
+
+svg.commentIco {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+p.readTime,
+p.comment {
+    font-size: 0.9em;
+}
+
+/* slider controls */
+
+.control {
+    position: absolute;
+    top: 48%;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+.prev,
+.next {
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.prev {
+    background-image: url(./src/icons/arrow.svg);
+    left: -60px;
+}
+
+.next {
+    background-image: url(./src/icons/arrow.svg);
+    right: -60px;
+    transform: rotate(180deg);
+}
+
+.prev:active {
+    transform: scale(0.8);
+}
+
+.next:active {
+    transform: rotate(180deg) scale(0.8);
+}
